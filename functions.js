@@ -1,24 +1,23 @@
 
-/*
-var data = JSON.stringify($(form).serializeArray());
-*/
-
   function onSubmit(form){
+    var unstrJsData = $(form).serializeArray();
     var jsdata = JSON.stringify($(form).serializeArray());
 
 
     $.ajax({
-        url: 'submit.html',
+        //url: 'submit.html',
         dataType: 'JSON',
-        type: 'post',
+        type: 'POST',
         data: jsdata,
-        processData: false,
+        //processData: false,
         success: function(data, textStatus, jQxhr){
-            $('#response pre').html(JSON.stringify(data));
+            $('.eFormDiv').text(jsdata);
         },
         error: function(jqXhr, textStatus, errorThrown, data){
             //console.log(errorThrown);
+            $('.eFormDiv').text(jsdata);
             console.log(jsdata);
+
         }
     });
     return false;

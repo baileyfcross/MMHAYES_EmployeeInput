@@ -1,6 +1,7 @@
 /* Puts rounded edges on the input boxes */
 body {
   font-size: 20px;
+  margin: 20px;
 }
 
 #eFormDiv {
@@ -19,7 +20,8 @@ body {
   display: inline-block;
   float: left;
   border-radius: 5px;
-  height: 20px;
+  height: 25px;
+  margin-top: 10px
 }
 
 #eForm p {
@@ -27,7 +29,7 @@ body {
   color: dark-grey;
   display: inline-block;
   margin-left: 20px;
-  margin-top: 0px;
+  margin-top: 25px;
   margin-bottom: 0px;
 }
 
@@ -53,6 +55,7 @@ body {
 
 #eForm #eCurrent {
   margin-top: 15px;
+  margin-left: 3px;
   transform: scale(1.5);
   border: 2px solid black;
 }
