@@ -1,0 +1,63 @@
+/* Puts rounded edges on the input boxes */
+body {
+  font-size: 20px;
+}
+
+#eFormDiv {
+
+}
+
+/* Alligns the input boxes and leaves the labels to the left */
+#eForm label{
+  display: inline-block;
+  float: left;
+  clear: left;
+  width: 200px;
+  text-align: left;
+}
+#eForm input{
+  display: inline-block;
+  float: left;
+  border-radius: 5px;
+  height: 20px;
+}
+
+#eForm p {
+  font-size: 18px;
+  color: dark-grey;
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* Disables Scrollbar visability in IE, Firefox, Google Chrome */
+#eForm select{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 2px solid black;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  width: 146px;
+}
+
+#eForm #eState {
+  margin-top: 10px;
+}
+
+#eForm select::-webkit-scrollbar {
+  display: none;
+}
+
+#eForm #eCurrent {
+  margin-top: 15px;
+  transform: scale(1.5);
+  border: 2px solid black;
+}
+
+
+#eForm #eSubmit {
+  margin-top: 20px;
+}
